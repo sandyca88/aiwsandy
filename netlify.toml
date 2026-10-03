@@ -1,0 +1,12 @@
+[build]
+  publish = "."
+
+[[redirects]]
+  from = "/members"
+  to = "/members.html"
+  status = 200
+
+[[headers]]
+  for = "/members.html"
+  [headers.values]
+    X-Robots-Tag = "noindex"
